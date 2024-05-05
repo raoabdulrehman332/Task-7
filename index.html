@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-7</h1>
+    <h2>Q7: 
+        Write a JavaScript program to check whether a given positive number is a <br>
+        multiple of 3 or 7.  <br>
+    </h2> 
+
+    <script>
+     // Function to check if a number is a multiple of 3 or 7
+     function isMultipleOf3Or7(number) {
+            return number % 3 === 0 || number % 7 === 0; // Return true if the number is a multiple of 3 or 7, false otherwise
+        }
+
+        var number =+ prompt("Enter Number:");
+        
+        if (isMultipleOf3Or7(number) == true) {
+            document.write(`<h1 class="ans"> ${number} is a multiple of 3 or 7`)   
+        }else{
+            document.write(`<h1 class="ans"> ${number} is not multiple of 3 or 7`)   
+
+        }
+
+    </script>
+</body>
+</html>
